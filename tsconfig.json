@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "ES2022",
+      "esModuleInterop": true,
+      "baseUrl": ".",
+      "paths": {
+        "squads-multisig": ["/Users/oleksandr/Desktop/naukma/solana/squads-sdk/v4/sdk/multisig/"]
+      }
+    }
+}

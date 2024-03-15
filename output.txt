@@ -1,0 +1,31 @@
+npx tsx index.ts                                                   
+
+Airdrop sig 2wXPKLQcacHTWiavRD3TgAcRbiJAJXKbwzkoQyNqQrsQdnAx8SGAv5fUgTykJ77E1B6nEWYrhna4sbmWakv8nXc3
+Multisig created:  2dMagHD9WqD1FPXvdL9LdB7a5s6m3DTNuGRNtne7oPuB9WZUFH5uwWHFumEV5BD7C8AtxZjhwnWneKaxpKFdC8iB
+Airdrop sig 5tUSh1QJMqnuAmaqaKiFu8ac3KeMohH3Wf2ft1iy5ACLTreMm3ps5aJp1wacevCdQQpgxjZVXKRY1BUeY5JcCmpg
+Airdrop sig 2i24kdkAgpdGYZz8mSBD3agxvwUsDxkAxqdpg3LzEkaDpbmq31x1wt9swbBBjbJv2u1vdpsgo87NSJyan2yyTAwq
+
+create vault transaction
+
+Transaction created:  4QBed56K8KRBtFwDnUTQ5JGM1BwmNzkkvETQbiQ8Adjh2NUpGipbqrYHaH51BojUhc71Z5W7EWkThqPgxaratipp
+Transaction proposal created:  3aATp3xsZz1xYmJh2DbEKqn2yYnvjpS5WXyd3PpRn4PuN23x1of7JW6pMEmaUNhYX9TkKbF3z8i6nfoopKbbE654
+First transaction approve :  3hAcFMvhbzFaZjzuYLwTAcDPPvgoPmFowNqeQRNyKyHbyaDbHLJdTnNMKS8ooD7zDgPVgQQ87bfjkScU1qdK9tgb
+Second transaction approve :  67fkkxguGwh9CqEu1bKzbunDZu9SFfuYTUWgTrJknzgfAiqafgPvLKv55QMHEt2gTugxVeyvZursjC9NzLKHEs2w
+Transaction before execute
+
+~/squads-sdk/squads-test/node_modules/@solana/web3.js/lib/index.cjs.js:8026
+      throw new SendTransactionError('failed to send transaction: ' + res.error.message, logs);
+            ^
+
+SendTransactionError: failed to send transaction: Transaction signature verification failure
+    at Connection.sendEncodedTransaction (~/squads-sdk/squads-test/node_modules/@solana/web3.js/lib/index.cjs.js:8026:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.sendRawTransaction (~/squads-sdk/squads-test/node_modules/@solana/web3.js/lib/index.cjs.js:7992:20)
+    at async Connection.sendTransaction (~/squads-sdk/squads-test/node_modules/@solana/web3.js/lib/index.cjs.js:7949:14)
+    at async Object.vaultTransactionExecute (~/squads-sdk/v4/sdk/multisig/lib/rpc/vaultTransactionExecute.js:2:1688)
+    at async executeProposal (~/squads-sdk/squads-test/index.ts:2:3949)
+    at async main (~/squads-sdk/squads-test/index.ts:2:4317) {
+  logs: undefined
+}
+
+Node.js v21.7.1

@@ -1,0 +1,12 @@
+{
+    "scripts": {
+      "test": "npx tsx index.ts"
+    },
+    "dependencies": {
+      "@solana/web3.js": "*"
+    },
+    "devDependencies": {
+        "ts-node": "10.9.1",
+        "typescript": "*"
+    }
+}
